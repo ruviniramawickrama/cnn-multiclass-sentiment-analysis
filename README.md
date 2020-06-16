@@ -21,17 +21,17 @@ The file "emotion-predictor.py" can be used to predict emotion of a single phras
 
 The prerequisite to run this file is listed below
   1. Create a folder named "Emotion_Predictor" in the location C:\Intel\
-  2. The trained CNN model "cnn_model" should be included in the above location (you can either use the cnn_model uploaded in the            repository or create it by running "training-and-testing-cnn.py")
+  2. The trained CNN model "cnn_model" should be included in the above location (It should be created by running "training-and-testing-cnn.py")
   3. An empty CSV file with the name "emotion_predictor" should be created in the above location
   
 To predict a single emotion, execute the below command in the command line
-    python <location to emotion-predictor.py> "single" <phrase to predict the emotion>
-    python C:\Intel\emotion-predictor.py "single" "Today is a great day!!!"
+  - python |location to emotion-predictor.py| "single" |phrase to predict the emotion|
+  - python C:\Intel\emotion-predictor.py "single" "Today is a great day!!!"
 
 The output of the above command will be probablities for each sentiment class "Happiness", "Sadness", "Anger", "Surprise" and "Fear" respectively along with predicted sentiment class which has the highest probability.
 
 To predict emotions of multiple phrases, execute the below command in the command line (The phrases should be included within a CSV file)
-    python <location to emotion-predictor.py> "multiple" <location to CSV file having multiple phrases>
-    python C:\Intel\emotion-predictor.py "multiple" "C:\\Intel\\Emotion_Predictor\\feedbacks.csv"
+  - python |location to emotion-predictor.py| "multiple" |location to CSV file having multiple phrases|
+  - python C:\Intel\emotion-predictor.py "multiple" "C:\\Intel\\Emotion_Predictor\\feedbacks.csv"
 
 The output of the above command will be prediction counts for each sentiment class "Happiness", "Sadness", "Anger", "Surprise" and "Fear" respectively 
